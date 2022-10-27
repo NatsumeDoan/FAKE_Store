@@ -76,7 +76,7 @@ class cartpage extends State<cart_page>{
                                           children: [
                                             ElevatedButton(onPressed: (){
                                               setState(() {
-                                                e.minus();
+                                                e.minus(pp.listCart);
                                               });
                                             }, child: Text("-")),
                                             Container(

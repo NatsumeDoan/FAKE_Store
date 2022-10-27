@@ -28,7 +28,9 @@ class ProductModel {
   void add() async{
     this.SoLuong= this.SoLuong + 1;
   }
-  void minus() async{
+  void minus(List<ProductModel> pp) async{
+    if(this.SoLuong==1)
+      pp.remove(this);
     this.SoLuong= this.SoLuong - 1;
   }
 }
